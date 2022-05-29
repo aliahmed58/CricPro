@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="819.0" stylesheets="@css/individualStats.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.IndividualStats">
+
+    <Label fx:id="cricProTitle" layoutX="250.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="logo" text="Cric Pro">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <Label fx:id="homepageLabel" layoutX="382.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="pageName" text="- Individual Stats">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <fx:include source="navbar.fxml" />
+   <Label layoutX="248.0" layoutY="89.0" prefHeight="22.0" prefWidth="268.0" styleClass="selectPlayerName" text="Select a player to view stats" />
+   <ScrollPane hbarPolicy="NEVER" layoutX="250.0" layoutY="128.0" prefHeight="610.0" prefWidth="1178.0" styleClass="scroll-bar" stylesheets="@css/individualStats.css">
+      <content>
+         <TilePane fx:id="tilePane" hgap="30.0" prefHeight="595.0" prefWidth="1173.0" vgap="20.0">
+
+         </TilePane>
+      </content></ScrollPane>
+
+</AnchorPane>

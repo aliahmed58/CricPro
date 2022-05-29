@@ -1,0 +1,17 @@
+.class {
+    -fx-font-family: "Raleway Medium";
+    -fx-font-size: 40px;
+}
+
+.menuButton {
+    -fx-background-color: #ADEFD1;
+    -fx-font-family: "Raleway Medium";
+    -fx-font-fill: #00203F;
+    -fx-font-size: 20px;
+}
+
+.menuButton:hover {
+    -fx-background-color: #00203F;
+    -fx-text-fill: #ADEFD1;
+    -fx-cursor: hand;
+}

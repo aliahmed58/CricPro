@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox stylesheets="@css/home.css" prefHeight="1000.0" prefWidth="217.0" style="-fx-background-color: #ADEFD1;" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.Navbar" >
+    <children>
+        <Text styleClass="class" fill="#00203f" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 20px;"
+              text="Menu" textAlignment="CENTER" wrappingWidth="218.93670272827148">
+            <font>
+                <Font name="Symbol" size="33.0"/>
+            </font>
+        </Text>
+        <VBox fx:id="buttonsBox" prefHeight="382.0" prefWidth="219.0" style="-fx-translate-y: 40px;">
+            <children>
+                <Button fx:id="home" styleClass="button" mnemonicParsing="false" prefHeight="45.0" prefWidth="231.0"
+                        style="-fx-background-color: ADEFD1;" text="Homepage" textAlignment="CENTER" textFill="#00203f">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="individualStats" styleClass="button" layoutX="10.0" layoutY="10.0" mnemonicParsing="false"
+                        prefHeight="45.0" prefWidth="231.0" style="-fx-background-color: ADEFD1;"
+                        text="Individual Stats" textAlignment="CENTER" textFill="#00203f">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="teamrankings" styleClass="button" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" prefHeight="45.0"
+                        prefWidth="231.0" style="-fx-background-color: ADEFD1;" text="Team Stats" textAlignment="CENTER"
+                        textFill="#00203f">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="comparePlayers" styleClass="button" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" prefHeight="45.0"
+                        prefWidth="231.0" style="-fx-background-color: ADEFD1;" text="Player Comparison"
+                        textAlignment="CENTER" textFill="#00203f">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Button>
+
+                <Button fx:id="compareTeams" styleClass="button" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" prefHeight="45.0"
+                        prefWidth="231.0" style="-fx-background-color: ADEFD1;" text="Team Comparison"
+                        textAlignment="CENTER" textFill="#00203f">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</VBox>

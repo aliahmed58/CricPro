@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="819.0" stylesheets="@css/individualStats.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.TeamRankings">
+
+    <Label fx:id="cricProTitle" layoutX="250.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="logo" text="Cric Pro">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <Label fx:id="homepageLabel" layoutX="382.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="pageName" text="- Team Stats">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <fx:include source="navbar.fxml" />
+    <Label layoutX="250.0" layoutY="84.0" prefHeight="22.0" prefWidth="292.0" styleClass="selectPlayerName" text="Select a team below to display it's stats:" />
+   <TilePane fx:id="tilePane" hgap="10.0" layoutX="250.0" layoutY="118.0" prefColumns="3" prefHeight="574.0" prefRows="4" prefWidth="1185.0" vgap="10.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TilePane>
+
+</AnchorPane>

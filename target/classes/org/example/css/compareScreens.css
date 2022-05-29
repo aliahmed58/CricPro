@@ -1,0 +1,80 @@
+.logo {
+    -fx-font-family: "Raleway Bold";
+    -fx-font-size: 30px;
+}
+
+.pageName {
+    -fx-font-family: "Raleway Medium";
+    -fx-font-size: 30px;
+}
+
+.selectText {
+    -fx-font-family: "Raleway Bold";
+    -fx-font-size: 15px;
+}
+
+.selectPlayerName {
+    -fx-text-fill: #00203F;
+    -fx-font-family: "Raleway Medium";
+    -fx-font-size: 15px;
+}
+
+.selectPlayer:hover {
+    -fx-background-color: #00203F;
+    -fx-cursor: hand;
+}
+
+.selectPlayer:hover .selectPlayerName {
+    -fx-text-fill: #ADEFD1;
+}
+
+.selectPlayer {
+    -fx-background-color: #ADEFD1;
+}
+
+.nextBtn {
+    -fx-font-family: "Raleway Medium";
+    -fx-background-color: #ADEFD1;
+    -fx-font-size: 15px;
+    -fx-border-color: none;
+}
+
+.nextBtn:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #00203F;
+    -fx-text-fill: #ADEFD1;
+}
+
+.error {
+    -fx-text-fill: red;
+    -fx-font-family: "Raleway Medium";
+    -fx-font-size: 15px;
+}
+
+.teamTitle {
+    -fx-font-family: "Raleway Medium";
+    -fx-text-fill: #00203F;
+    -fx-font-size: 20px;
+}
+
+.VS {
+    -fx-font-family: "Raleway Bold";
+    -fx-text-fill: #00203F;
+    -fx-font-size: 30px;
+}
+
+.tableHeading {
+    -fx-font-size: 20px;
+    -fx-font-family: "Raleway Medium";
+    -fx-text-fill: #ADEFD1;
+}
+
+.colTh {
+    -fx-font-size: 18px;
+    -fx-font-family: "Raleway Medium";
+    -fx-text-fill: #00203F;
+}
+
+.holder {
+    -fx-spacing: 6px;
+}

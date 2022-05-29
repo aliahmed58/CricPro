@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="819.0" stylesheets="@css/individualStats.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.IndividualStatsSearch">
+
+    <Label fx:id="cricProTitle" layoutX="250.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="logo" text="Cric Pro">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <Label fx:id="homepageLabel" layoutX="382.0" layoutY="30.0" style="-fx-text-fill: #00203F;" styleClass="pageName" text="- Individual Stats">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Label>
+    <fx:include source="navbar.fxml" />
+   <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@players/babar.png" />
+      </image>
+   </ImageView>
+   <Label fx:id="imgCaption" layoutX="261.0" layoutY="251.0" prefHeight="26.0" prefWidth="241.0" text="Pakistan - Batter" textAlignment="CENTER" />
+   <Label layoutX="536.0" layoutY="113.0" prefHeight="19.0" prefWidth="49.0" styleClass="heading" text="Name" />
+   <Label fx:id="playerName" layoutX="536.0" layoutY="148.0" prefHeight="30.0" prefWidth="199.0" styleClass="info" text="Babar Azam" />
+   <Label layoutX="536.0" layoutY="188.0" prefHeight="19.0" prefWidth="49.0" styleClass="heading" text="Age" />
+   <Label fx:id="age" layoutX="536.0" layoutY="223.0" prefHeight="19.0" prefWidth="76.0" styleClass="info" text="27y" />
+   <Label layoutX="753.0" layoutY="109.0" prefHeight="27.0" prefWidth="137.0" styleClass="heading" text="Intl career" />
+   <Label fx:id="careerSpan" layoutX="753.0" layoutY="146.0" prefHeight="27.0" prefWidth="128.0" styleClass="info" text="2015 - 2021" />
+   <Label layoutX="753.0" layoutY="184.0" prefHeight="27.0" prefWidth="128.0" styleClass="heading" text="Batting style" />
+   <Label fx:id="battingStyle" layoutX="753.0" layoutY="220.0" prefHeight="27.0" prefWidth="158.0" styleClass="info" text="Right hand bat" />
+   <Label layoutX="932.0" layoutY="109.0" prefHeight="27.0" prefWidth="138.0" styleClass="heading" text="Bowling style" />
+   <Label fx:id="bowlingStyle" layoutX="932.0" layoutY="144.0" prefHeight="27.0" prefWidth="157.0" styleClass="info" text="Right arm offbreak" />
+   <Label layoutX="244.0" layoutY="285.0" prefHeight="32.0" prefWidth="211.0" styleClass="statHeading" text="Overall career stats" />
+   <HBox fx:id="overallHeadings" alignment="CENTER_LEFT" layoutX="234.0" layoutY="325.0" prefHeight="46.0" prefWidth="1151.0" spacing="75.0" styleClass="overallHbox">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="th" text="Mat">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="th" text="Runs">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="th" text="HS">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="20.0" prefHeight="26.0" prefWidth="58.0" styleClass="th" text="Bat Av">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="th" text="100s">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="th" text="Wkts">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="20.0" prefHeight="26.0" prefWidth="75.0" styleClass="th" text="Bowl Avg">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="670.0" layoutY="20.0" prefHeight="26.0" prefWidth="35.0" styleClass="th" text="Ct">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="725.0" layoutY="20.0" prefHeight="26.0" prefWidth="35.0" styleClass="th" text="St">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </HBox>
+   <HBox alignment="CENTER_LEFT" layoutX="234.0" layoutY="371.0" prefHeight="46.0" prefWidth="1151.0" spacing="75.0" styleClass="overallHboxFigures">
+      <children>
+         <Label fx:id="overallMat" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="heading" text="190">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallRuns" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="heading" text="8980">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallHs" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="heading" text="158">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="batAv" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="20.0" prefHeight="26.0" prefWidth="58.0" styleClass="heading" text="49.34">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallHundreds" alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="heading" text="20">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallWkts" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" styleClass="heading" text="1">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallBowlAvg" alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="20.0" prefHeight="26.0" prefWidth="75.0" styleClass="heading" text="2.00">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallCt" alignment="CENTER" contentDisplay="CENTER" layoutX="670.0" layoutY="20.0" prefHeight="26.0" prefWidth="38.0" styleClass="heading" text="97.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+         <Label fx:id="overallSt" alignment="CENTER" contentDisplay="CENTER" layoutX="725.0" layoutY="20.0" prefHeight="26.0" prefWidth="35.0" styleClass="heading" text="0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Label>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </HBox>
+   <Label layoutX="235.0" layoutY="436.0" prefHeight="32.0" prefWidth="211.0" styleClass="statHeading" text="Average career stats" />
+   <ScrollPane hbarPolicy="NEVER" layoutX="236.0" layoutY="531.0" prefHeight="258.0" prefWidth="1171.0">
+      <content>
+         <TilePane fx:id="tilePane" prefHeight="246.0" prefWidth="1166.0" />
+      </content>
+   </ScrollPane>
+   <HBox fx:id="overallHeadings1" alignment="CENTER_LEFT" layoutX="237.0" layoutY="484.0" prefHeight="46.0" prefWidth="1151.0" spacing="60.0" style="-fx-font-size: 13px" styleClass="overallHbox">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="189.0" style="-fx-font-size: 13px" text="Type" textAlignment="CENTER">
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="22.0" prefWidth="62.0" style="-fx-font-size: 13px" text="Mat">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="20.0" prefHeight="22.0" prefWidth="48.0" style="-fx-font-size: 13px" text="Runs">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="20.0" prefHeight="18.0" prefWidth="58.0" style="-fx-font-size: 13px" text="HS">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="20.0" prefHeight="26.0" prefWidth="66.0" style="-fx-font-size: 13px" text="Bat Av">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="20.0" prefHeight="18.0" prefWidth="48.0" style="-fx-font-size: 13px" text="100s">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="18.0" prefWidth="62.0" style="-fx-font-size: 13px" text="Wkts">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="20.0" prefHeight="26.0" prefWidth="67.0" style="-fx-font-size: 13px" text="Bowl Avg">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="670.0" layoutY="20.0" prefHeight="26.0" prefWidth="35.0" style="-fx-font-size: 13px" text="Ct">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="725.0" layoutY="20.0" prefHeight="26.0" prefWidth="46.0" style="-fx-font-size: 13px" text="St">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <styleClass>
+               <String fx:value="th" />
+            </styleClass>
+         </Label>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </HBox>
+
+</AnchorPane>
